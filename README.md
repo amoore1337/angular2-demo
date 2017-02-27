@@ -8,4 +8,4 @@ This project will serve as the frontend (dashboard) for Moore-Tech.net.
 - Less
 - Webpack 2
 
-* More details to come... *
+*More details to come...*

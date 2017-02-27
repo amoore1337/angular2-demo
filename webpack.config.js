@@ -7,6 +7,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const config = {
     entry: {
         'polyfills': './src/polyfills',
+        'vendor': './src/vendor',
         'main': './src/main'
     },
     output: {
@@ -39,15 +40,13 @@ const config = {
                 ]
             },
             { test: /\.html$/, use: 'raw-loader', exclude: [ './src/index.html' ] }
-            // { test: /\.json$/, loader: 'json-loader' },
-            // { test: /\.html/, loader: 'html-loader?minimize=false' },
-            // { test: /\.styl$/, loader: 'css-loader!stylus-loader' },
-            // { test: /\.css$/, loader: 'style-loader!css-loader' }
         ]
     },
     plugins: [
         // Fixes Angular 2 error
         new webpack.ContextReplacementPlugin(/angular(\\|\/)core(\\|\/)(esm(\\|\/)src|src)(\\|\/)linker/, __dirname),
+
+        new webpack.optimize.CommonsChunkPlugin({ name: ['app', 'vendor', 'polyfills'] }),
 
         new CopyWebpackPlugin([{ from: './src/index.html' }], {}),
 
