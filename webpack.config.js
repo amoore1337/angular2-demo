@@ -18,7 +18,27 @@ const config = {
     },
     module: {
         rules: [
-            { test: /\.ts$/, loader: 'awesome-typescript-loader' }
+            {
+                test: /\.ts$/,
+                use: [
+                    { loader: 'awesome-typescript-loader' },
+                    { loader: 'angular2-template-loader' }
+                ]
+            },
+            {
+                test: /\.less$/,
+                use: [
+                    { loader: 'to-string-loader' },
+                    { loader: 'css-loader', options: { importLoaders: 1 } },
+                    { loader: 'postcss-loader',
+                        options: {
+                            plugins: function () { return [ require('autoprefixer') ]; }
+                        }
+                    },
+                    { loader: 'less-loader' }
+                ]
+            },
+            { test: /\.html$/, use: 'raw-loader', exclude: [ './src/index.html' ] }
             // { test: /\.json$/, loader: 'json-loader' },
             // { test: /\.html/, loader: 'html-loader?minimize=false' },
             // { test: /\.styl$/, loader: 'css-loader!stylus-loader' },
