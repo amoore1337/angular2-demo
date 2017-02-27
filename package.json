@@ -1,0 +1,42 @@
+{
+  "name": "moore-tech.net",
+  "version": "0.0.1",
+  "description": "Angular2 project for moore-tech frontend",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Austin Moore",
+  "license": "ISC",
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.0.7",
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.26.2",
+    "file-loader": "^0.10.1",
+    "html-loader": "^0.4.5",
+    "json-loader": "^0.5.4",
+    "raw-loader": "^0.5.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^2.5.0",
+    "ts-loader": "^2.0.1",
+    "tslint": "^4.4.2",
+    "tslint-loader": "^3.4.2",
+    "typescript": "^2.2.1",
+    "webpack": "^2.2.1"
+  },
+  "dependencies": {
+    "@angular/common": "^2.4.8",
+    "@angular/compiler": "^2.4.8",
+    "@angular/core": "^2.4.8",
+    "@angular/forms": "^2.4.8",
+    "@angular/http": "^2.4.8",
+    "@angular/platform-browser": "^2.4.8",
+    "@angular/platform-browser-dynamic": "^2.4.8",
+    "@angular/platform-server": "^2.4.8",
+    "core-js": "^2.4.1",
+    "reflect-metadata": "^0.1.10",
+    "rxjs": "^5.2.0",
+    "zone.js": "^0.7.7"
+  }
+}
