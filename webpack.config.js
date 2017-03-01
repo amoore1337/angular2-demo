@@ -24,6 +24,14 @@ const config = {
             {
                 test: /\.ts$/,
                 use: [
+                    { // MAKE SURE TO CHAIN VANILLA JS CODE, I.E. TS COMPILATION OUTPUT.
+                        loader: 'ng-router-loader',
+                        options: {
+                            // loader: 'async-import',
+                            // genDir: 'compiled',
+                            // aot: AOT
+                        }
+                    },
                     { loader: 'awesome-typescript-loader' },
                     { loader: 'angular2-template-loader' }
                 ]
