@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-    styleUrls: [ "./dashboard.less" ],
-    templateUrl: "./dashboard.template.html"
+    styleUrls: [ "./dashboard.component.less" ],
+    templateUrl: "./dashboard.component.html"
 })
-export class DashboardComponent {
-}
+export class DashboardComponent {}
