@@ -22,7 +22,7 @@ webpack -w
 cd ./dist && python -m SimpleHTTPServer 8080
 ```
 
-**Go to [http://localhost://8080](http://localhost://8080) in your broswer**
+**Go to [http://localhost:8080](http://localhost:8080/) in your broswer**
 
 ### Framework Technologies:
 - Angular 2.4
