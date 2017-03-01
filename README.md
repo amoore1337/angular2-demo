@@ -20,9 +20,9 @@ webpack -w
 
 # 5. In another terminal window, navigate to angular2-demo/dist and host locally such as:
 cd ./dist && python -m SimpleHTTPServer 8080
-
-# 6. Go to [http://localhost://8080](http://localhost://8080) in your broswer
 ```
+
+**Go to [http://localhost://8080](http://localhost://8080) in your broswer**
 
 ### Framework Technologies:
 - Angular 2.4
