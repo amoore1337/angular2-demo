@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Angular2 project for moore-tech frontend",
   "scripts": {
+    "lint": "tslint --type-check --project ./tslint.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Austin Moore",
@@ -13,8 +14,11 @@
     "awesome-typescript-loader": "^3.0.7",
     "babel-core": "^6.23.1",
     "babel-loader": "^6.3.2",
+    "codelyzer": "^3.0.0-beta.0",
     "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.26.2",
+    "gulp": "^3.9.1",
+    "gulp-tslint": "^7.1.0",
     "html-webpack-plugin": "^2.28.0",
     "less-loader": "^2.2.3",
     "ng-router-loader": "^2.1.0",
@@ -25,7 +29,7 @@
     "stylus-loader": "^2.5.0",
     "to-string-loader": "^1.1.5",
     "ts-loader": "^2.0.1",
-    "tslint": "^4.4.2",
+    "tslint": "^4.5.1",
     "tslint-loader": "^3.4.2",
     "typescript": "^2.2.1",
     "webpack": "^2.2.1"
