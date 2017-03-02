@@ -19,9 +19,10 @@ const config = {
     resolve: {
         extensions: ['.ts', '.js']
     },
-    watch: true,
-    watchOptions: {
-        ignored: /node_modules/
+    devServer: {
+        contentBase: path.join(__dirname, "dist"),
+        compress: true,
+        port: 3030
     },
     module: {
         rules: [
