@@ -19,6 +19,10 @@ const config = {
     resolve: {
         extensions: ['.ts', '.js']
     },
+    watch: true,
+    watchOptions: {
+        ignored: /node_modules/
+    },
     module: {
         rules: [
             {
