@@ -1,6 +1,6 @@
 # Angular 2 Demo with Webpack 2
 
-This project is intended to serve as a guide for new Angular 2 projects with lazily loading modules. It is still a work in progress. Directory structures and code will follow the style guide provided by [John Papa](https://angular.io/docs/ts/latest/guide/style-guide.html).
+This project is intended to serve as a guide for new Angular 2 projects with lazy loading of modules in Webpack 2. Directory structures and code will follow the style guide provided by [John Papa](https://angular.io/docs/ts/latest/guide/style-guide.html) (now offical Angular style guide). This framework is still a work in progress.
 
 ### Framework Technologies:
 - Angular 2.4
@@ -31,7 +31,7 @@ cd ./dist && python -m SimpleHTTPServer 8080
 Go to [http://localhost:8080](http://localhost:8080/) in your broswer
 
 ## File Structure
-> This project uses a component-based file structure as outlined in the Angular style guide.
+> We are using a component-based file structure as outlined in the Angular style guide.
 
 ```
 angular2-demo/
@@ -46,10 +46,10 @@ angular2-demo/
  │   │
  │   ├──app/                               * Directory for application root module
  │   │   ├──about                          * Directory for 'about' module
- │   │   │   ├──about.component.html       * Template for 'about' component
- │   │   │   ├──about.component.less       * Styles for 'about' component
- │   │   │   ├──about.component.ts         * Logic for 'about' component
- │   │   │   ├──about.component.spec.ts    * Tests for 'about' component
+ │   │   │   ├──about.component.html       * Template for component
+ │   │   │   ├──about.component.less       * Styles for component
+ │   │   │   ├──about.component.ts         * Logic for component
+ │   │   │   ├──about.component.spec.ts    * Tests for component
  │   │   │   ├──about.module.ts
  │   │   │   ├──about.routing.module.ts    * Routing module for lazily loaded module
  │   │   │   └──index.ts                   * Index file for easy import syntax (ex: "import { AboutModule } from  './about'")
@@ -88,13 +88,13 @@ angular2-demo/
  │       └──favicon.ico
  │
  │
- ├──tsconfig.json                          * typescript configuration
+ ├──tsconfig.json
  ├──package.json
- └──webpack.config.js                      * webpack main configuration file
+ └──webpack.config.js
 
 ```
 
-## Resources
+## Useful Resources
 * [Angular Tutorial](https://angular.io/docs/ts/latest/tutorial/)
 * [Angular Architecture](https://angular.io/docs/ts/latest/guide/architecture.html)
 * [Angular Style Guide](https://angular.io/docs/ts/latest/guide/style-guide.html)
@@ -105,4 +105,4 @@ angular2-demo/
 * [Sublime Angular Snippets](https://github.com/orizens/sublime-angular2-snippets)
 
 
-*More details to come...*
+*Details still being added...*
