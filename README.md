@@ -28,7 +28,7 @@ webpack -w
 cd ./dist && python -m SimpleHTTPServer 8080
 ```
 
-Go to [http://localhost:8080](http://localhost:8080/) in your broswer**
+Go to [http://localhost:8080](http://localhost:8080/) in your broswer
 
 ## File Structure
 > This project uses a component-based file structure as outlined in the Angular style guide.
