@@ -102,6 +102,7 @@ angular2-demo/
 * [AngularClass Starter Template](https://github.com/AngularClass/angular2-webpack-starter)
 * [Webpack Getting Started](https://webpack.js.org/guides/get-started/)
 * [TypeScript Quick Start](https://www.typescriptlang.org/docs/tutorial.html)
+* [Sublime Angular Snippets](https://github.com/orizens/sublime-angular2-snippets)
 
 
 *More details to come...*
